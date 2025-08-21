@@ -18,7 +18,7 @@ const Name = () => {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:6201/api/names", {
+      const response = await axios.post("https://addnames.onrender.com/api/names", {
         name: name.trim(),
       });
       setMessage(`Name added successfully!`);
